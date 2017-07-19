@@ -6,7 +6,7 @@ var text =  [
   "Location",
   "is",
   "Slide",
-  "ranch",
+  "Ranch",
   "But",
   "dont",
   "drive",
@@ -26,7 +26,6 @@ var text =  [
   "10pm",
   "It",
 "is", "on", "a", "ranch,", "there", "are", "no", "sidewalks.", "Heels", "are", "a", "bad", "idea.", "We", "have", "two", "hotel", "blocks", "Cheaper", "with", "a", "code", "it", "is", "45", "minutes", "away", "from", "SF", "so", "maybe", "carpool", "Thanks!"]
-
 
 pushNewWord = function() {
   $("#text").text(text.shift());
