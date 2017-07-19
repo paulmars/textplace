@@ -7,7 +7,9 @@ RUN apt-get update -qq && apt-get install -y build-essential
 RUN apt-get install -y nodejs
 
 RUN apt-get install coffeescript
-RUN apt-get install coffeescript
+
+RUN apt-get install -y npm
+RUN npm install -g nodemon
 
 ENV APP_HOME /app
 RUN mkdir $APP_HOME
@@ -18,4 +20,6 @@ RUN bundle install
 
 ADD . $APP_HOME
 
-CMD ["./dev.sh"]
+EXPOSE 6060
+
+CMD "foreman start"
